@@ -1,0 +1,37 @@
+body {
+    background-color: skyblue;
+    font-size: 1.6rem;
+}
+.container {
+    width: 100%;
+    justify-content: center;
+
+}
+.appHeader, .appMain {
+    width: 1000px;
+}
+.appNavigater, .appFooter {
+    width: 100%;
+}
+.appMain {
+    justify-content: space-between;
+}
+.book {
+    width: 320px;
+}
+.news {
+    width: 660px;
+}
+.board {
+    width: 320px;
+}
+.favorite {
+    width: 220px;
+    order: 1;
+}
+.twiter {
+    width: 420px;
+}
+
+.appFooter {
+}

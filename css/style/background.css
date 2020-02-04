@@ -1,0 +1,34 @@
+.container {
+    background-color: yellow;
+}
+.appHeader {
+    background-color: violet;
+    min-height: 15vh;
+}
+.appNavigater {
+    background-color: yellowgreen;
+    min-height: 10vh;
+}
+.appMain {
+    background-color: tomato;
+    min-height: 60vh;
+}
+.book {
+background-color: turquoise;
+}
+.news {
+    background-color: wheat;
+}
+.board {
+    background-color: mediumpurple;
+}
+.favorite {
+    background-color: lime;
+}
+.twiter {
+    background-color: royalblue;
+}
+.appFooter {
+    background-color: hotpink;
+    min-height: 15vh;
+}

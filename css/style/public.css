@@ -1,0 +1,9 @@
+/* 공통 스타일 */
+/* 박스모델 초기화 */
+body, body *, body *::before, body *::after {
+    box-sizing: border-box;
+}
+.container, .appMain {
+    display: flex;
+    flex-flow: row wrap;
+}
