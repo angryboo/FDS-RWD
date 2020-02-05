@@ -1,4 +1,9 @@
 /* 공통 스타일 */
+/* 링크스타일 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* 박스모델 초기화 */
 body, body *, body *::before, body *::after {
     box-sizing: border-box;
@@ -7,3 +12,35 @@ body, body *, body *::before, body *::after {
     display: flex;
     flex-flow: row wrap;
 }
+
+.brand a{
+    display: block;
+  }
+.memberOnly {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.memberOnly li {
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+}
+.memberOnly li:last-child {
+    margin-right: -0.715em;
+}
+.memberOnly a {
+    padding: 0.5em 0.715em;
+
+}
+
+input[name="search"] {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 35px;
+    margin-right: 5px;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+

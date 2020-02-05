@@ -3,15 +3,12 @@
 }
 .appHeader {
     background-color: violet;
-    min-height: 15vh;
 }
 .appNavigater {
     background-color: yellowgreen;
-    min-height: 10vh;
 }
 .appMain {
     background-color: tomato;
-    min-height: 60vh;
 }
 .book {
 background-color: turquoise;
@@ -30,5 +27,4 @@ background-color: turquoise;
 }
 .appFooter {
     background-color: hotpink;
-    min-height: 15vh;
 }

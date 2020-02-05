@@ -10,6 +10,7 @@ let isPristine = true
 
 // 렌더 함수
 function render() {
+
   // 모바일 디바이스 감지 (조건)
   let isMobile = window.innerWidth <= 999
   // 리사이즈 이벤트가 여러 번 발생해도 모드가 변경되지 않으면 함수 실행 중지
