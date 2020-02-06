@@ -10,7 +10,7 @@ body {
 .appHeader, .appMain {
     width: 1000px;
 }
-.appNavigater, .appFooter {
+.appNavigation, .appFooter {
     width: 100%;
 }
 .appMain {
@@ -32,7 +32,6 @@ body {
 .twiter {
     width: 420px;
 }
-
 .appFooter {
 }
 
@@ -40,34 +39,22 @@ body {
 
 /* 로고 */
 .appHeader {
-    /* background-color: #fff; */
-    /* height: 85px; */
     display: grid;
-    /* flex-flow: column wrap;
-    justify-content: center; */
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;   
     grid-template-areas: "brend member"
                          "brend search";
-
-    /* position: relative;                          */
+    margin-bottom: 2rem;
 }
 .brend {
     grid-area: brend;
-    /* position: absolute;
-    top: 50%;
-    margin-top: -30px; */
 }
+
 
 /* 멤버 */
 .memberOnly {
-    /* color: #181818; */
     grid-area: member;
 }
-
-
-
 .searchForm {
     grid-area: search;
     text-align: end;
@@ -75,7 +62,6 @@ body {
 input[name="search"] {
     width: 400px;
 }
-
 .buttonSearch {
     text-align: center;
     height: 35px;
@@ -90,3 +76,80 @@ input[name="search"] {
 
 
 
+/* 레거시방식 */
+
+/* .appNavigation {
+    background: #988574;
+    color: #fff;
+    padding: 2em 0;
+}
+.buttonNone {
+    display: none;
+}
+.menu__list::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.menu__item {
+    float: left;
+    margin: 0 25px;
+}
+.menu__link {
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+    font-size: 1.15em;
+    font-weight: 900;
+}
+.menu__list {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+}
+.menu__subMenu {
+    font-size: 1.05em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.menu__subMenu li {
+    margin-top: 1em;
+} */
+
+
+
+.appNavigation {
+    background: #988574;
+    padding: 3rem 0;
+}
+.buttonNone {
+    display: none;
+}
+.menu__list {
+    color: #fff;
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.menu__item {
+}
+.menu__link {
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+    font-size: 1.8rem;
+    font-weight: 900;
+    outline: 0;
+    cursor: default;
+}
+
+
+.menu__subMenu {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding-left: 0;
+}
+
+.menu__subMenu li {
+    margin-top: 1.5rem;
+    text-indent: 1em;
+}
