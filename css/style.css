@@ -5,8 +5,5 @@
 @import url(./typography/textstyle.css);
 @import url(./module/designpart.css);
 @import url(./style/public.css);
-@import url(./style/background.css);
+/* @import url(./style/background.css); */
 
-body {
-    background-color: yellow;
-}

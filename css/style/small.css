@@ -1,200 +1,156 @@
-body {
-    background-color: pink;
+body{
     font-size: 1.4rem;
-}
-.container {
-    position: relative;
-}
-
-
-.appHeader, .appMain, .appFooter {
+  }
+  .appHeader, .appMain, .appFooter{
     width: 100%;
-}
-
-
-
-.appHeader {
+  }
+  /* 헤더 */
+  .appHeader{
     display: flex;
     flex-flow: row wrap;
     background-color: #38302e;
     padding-bottom: 1em;
-}
-.brend, .memberOnly, .searchForm {
+  }
+  .brand, .memberOnly, .searchForm, .appMain{
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-}
-.brend a {
-
-
-}
-.memberOnly {
+  }
+  .memberOnly{
     order: -1;
-    background-color: #988574;
+    background-color: rgb(152, 133, 116);
     color: #fff;
-}
-
-input[name="search"] {
+  }
+  input[name="search"]{
     width: calc(100% - 45px);
-}
-
-.buttonSearch {
+  }
+  .buttonSearch{
+    vertical-align: middle;
     width: 35px;
     height: 35px;
-    text-align: center;
     line-height: 30px;
+    text-align: center;
     padding: 0;
-    font-size: 0.8em;
     border: 0;
+    font-size: 0.8em;
     position: relative;
     background-color: transparent;
-}
-.buttonSearch::before {
+  }
+  .buttonSearch::before{
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../images/btn_search.png);
-    background-size: cover;
-}
-
-
-
-
-/* 메뉴 제어버튼 */
-.buttonBurger {
+    background-image: url(./../images/btn_search.png);
+    background-size: contain;
+  }
+  /* 내비게이션 */
+  .appNavigation{
+    position: relative;
+  }
+  /* 메인 메뉴 제어 버튼 */
+  .buttonBurger{
     width: 35px;
     height: 35px;
     position: absolute;
-    top: 6rem;
-    right: 2rem;
+    top: 60px;
+    right: 20px;
     overflow: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     cursor: pointer;
-}
-.buttonNone {
-    background: transparent;
+  }
+  .buttonNone{
     border: 0;
+    background: transparent;
     padding: 0;
-}
-.burgerBar {
-    background-color: #fff;
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    /* transition: all 0.2s; */
-
-}
-.round {
-    border-radius: 5px;
-}
-.positionTop {
-    left: 0;
+  }
+  .round{
+    border-radius: 20px;
+  }
+  .positionTop{
     top: 0;
-}
-.positionMiddle {
-    left: 0;
+  }
+  .positionMiddle{
     top: 50%;
     transform: translateY(-50%);
-}
-.positionBottom {
-    left: 0;
+  }
+  .positionBottom{
     top: 100%;
     transform: translateY(-100%);
-}
-
-/* is act 추가 */
-.menu--isAct .positionTop {
-    left: 0;
+  }
+  /* .menu--isAct 클래스가 버튼의 부모요소에 추가 되었을 때 */
+  .menu--isAct .positionTop{
     top: 50%;
-    
     transform: translateY(-50%) rotate(45deg);
-    /* transform-origin: left; */
-    /* transform: rotate(45deg); */
-}
-.menu--isAct .positionMiddle {
-    left: 0;
+  }
+  .menu--isAct .positionMiddle{
     top: 50%;
     transform: translate(-105%, -50%);
-}
-.menu--isAct .positionBottom {
-    left: 0;
+  }
+  .menu--isAct .positionBottom{
     top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-}
-
-
-
-/* 메인메뉴 */
-
-.appNavigation {
-}
-.menu__list {
+    transform: translateY(-50%) rotate(-45deg) ;
+  }
+  .burgerBar{
+    position: absolute;
+    left:0;
+    background: #fff;
+    width: 100%;
+    height: 20%;
+    /* transition: all .2s; */
+  }
+  /* 메인 메뉴 */
+  .menu__list{
     position: fixed;
     top: 0;
     left: 0;
     width: 70%;
     height: 100vh;
-    transform: translateX(-100%);
+    transform:translate(-100%);
+    background: hsla(0, 0%, 0%, 0.75);
     color: #fff;
-    background-color: hsla(0, 0%, 0%, 0.75);
     padding: 2rem;
-    /* transition: transform 2s esae-in-out; */
-    
-}
-.menu--isAct .menu__list {
-    transform: none
-}
-
-.menu__item {
+    /* transition: transform .2s ease-in-out; */
+  }
+  .menu__item{
     margin: 1rem 0;
-}
-
-
-
-.menu__link {
+  }
+  .menu__link{
     font-size: 1.6rem;
     font-weight: 900;
-    background-color: blue;
     display: inline-block;
-    padding: 0.5rem 1rem;
-}
-
-.menu__subMenu {
+    padding: .5rem 1rem;
+  }
+  .menu__subMenu{
+    display: none;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-top: 2rem;
-    padding-left: 0;
-    display: none;
-}
-.menu__item--menuAct .menu__subMenu {
-    display: block;
-}
-
-.menu__subMenu li {
+  }
+  .menu__subMenu li{
     margin: 1rem 0;
-     
-}
-.menu__subMenu a {
+  }
+  .menu__subMenu a{
     display: block;
-    padding: 0.5rem 1rem;
-}
-
-
-
-.appMain {
-}
-
-
-
-
-.book, .news, .board, .favorite, .twiter {
+    padding: .5rem 1rem;
+  }
+  .menu--isAct .menu__list{
+    transform: none;
+  }
+  .menu__item--menuAct .menu__subMenu{
+    display: block;
+  } 
+  /* 메인 콘텐츠 */
+  .book, .news, .board, .favorite, .twitter{
     width: 100%;
-} 
+  }
+  .appMain {
+    padding-bottom: 2em;
+  }
 
 
+  /* 푸터 */
 
+.address span {
+  display: block;
+}
